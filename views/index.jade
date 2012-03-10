@@ -1,0 +1,16 @@
+script(type="text/template", id="film-template")
+  td(class="name")
+    <a href="<%= imdb %>"><img src="images/imdb.png"/></a>
+    <a href="<%= imdb %>"><%= english_name %></a>
+  td(class="seen") <%= seen %>
+  td(class="format") <%= format %>
+  td(class="rating") <%= rating %>
+
+#main
+  table
+    thead
+      th(class="name") Name
+      th(class="seen") Seen
+      th(class="format") Format
+      th(class="rating") Rating
+    tbody(id="films")

@@ -1,0 +1,15 @@
+!!!
+html
+  head
+    title Films
+    meta(http-equiv="Content-Type", content="text/html, charset=UTF-8")
+    link(rel='stylesheet', href='/stylesheets/screen.css')
+    script(src="/javascripts/vendor/jquery.js")
+    script(src="/javascripts/vendor/underscore.js")
+    script(src="/javascripts/vendor/backbone.js")
+    != js('films/models')
+    != js('films/collections')
+    != js('films/views')
+    != js('films/routers')
+    != js('films')
+  body!= body
